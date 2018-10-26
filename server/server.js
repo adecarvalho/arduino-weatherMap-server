@@ -43,7 +43,7 @@ app.get('/api/arduino', (request, response) => {
 })
 
 app.get('/api/openweathermap', (request, response) => {
-	getWeather('Pontoise')
+	getWeather('Paris')
 		.then(datas => {
 			response.json({
 				name: datas.name,
